@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "1d8eef1b-8264-40e8-8081-fdb9e76f9f4f",
+		"name": "CodeChallenge26ABR2023",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27104017"
+	},
+	"item": [
+		{
+			"name": "GetClienteV2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v2/api/cliente/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v2",
+						"api",
+						"cliente",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllClientesV2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v2/api/cliente/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v2",
+						"api",
+						"cliente",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateDatosContactoCliente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"ROBERTO\",\r\n    \"apellidos\": \"PEREZ\",\r\n    \"cedula\": \"1\",\r\n    \"telefono\": \"3911515151515\",\r\n    \"paisNacimiento\": \"CR\",\r\n    \"paisResidencia\": \"ITA\",\r\n    \"direccion\": \"DIRECCION ITAL\",\r\n    \"estado\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v2/api/cliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v2",
+						"api",
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SaveClienteV2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"HANNIA\",\r\n    \"apellidos\": \"SERRANO\",\r\n    \"cedula\": \"5555454545\",\r\n    \"telefono\": \"8745454545\",\r\n    \"paisNacimiento\": \"CR\",\r\n    \"paisResidencia\": \"ITA\",\r\n    \"direccion\": \"DIRECCION ITAL\",\r\n    \"estado\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v2/api/cliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v2",
+						"api",
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
